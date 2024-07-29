@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header text-uppercase bg-primary text-light">customers</div>
+    <div class="card-body p-0">
+      <table *ngIf="customers" class="table table-striped ">
+        <thead>
+        <tr>
+          <th>ID</th><th>first name</th><th>last name</th><th>email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let c of customers">
+          <td>{{c.id}}</td>
+          <td>{{c.firstName}}</td>
+          <td>{{c.lastName}}</td>
+          <td>{{c.email}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
